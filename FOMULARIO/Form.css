@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(-45deg, orange, rgb(15, 142, 173), green);
+
+}
+
+#form{
+    position: relative;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%-50%);
+    background: white;
+    border-radius: 10px;
+    padding: 60px;
+    width: min-content;
+    align-items: center;
+    color: orangered;
+    animation: deslizar 1.6s;
+    pointer-events: all;
+
+
+
+}
+
+.title{
+    font-size: 1.8em;
+    margin-bottom: 20%;
+
+}
+
+.input{
+    min-width: 200px;
+    border-radius: 20px;
+    border: 2px grey solid;
+    padding: 5px;
+    margin: 0px 0px 12px -5px; /*em cima, 2° direita, 3° em baixo, 4° esquerda*/ 
+
+}
+
+.input i{
+    font-size: 1.2em;
+    padding: 5px;
+    background: -webkit-linear-gradient(-45deg,orange, rgb(15, 142, 173), green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input input{
+    width: 80%;
+    border:none;
+    outline: none;
+    font-family: 'Urbanist', sans-serif;
+    transform: translateY(-5%);
+    color: rgb(114, 106, 106);
+    font-size: 15pt;
+}
+
+#bottom {
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+#bottom button{
+    font-family: 'Urbanist', sans-serif;
+    background: linear-gradient(45deg,orange, rgb(15, 142, 173), green);
+    width: 100%;
+    height: 40px;
+    border:none;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+#bottom button:hover{
+    background: linear-gradient(45deg,rgb(80, 54, 7), rgb(8, 67, 82), rgb(6, 70, 6));
+}
+
+footer{
+    position: fixed;
+    padding: 180px;
+    text-indent: 21.5em;
+
+}
+
+@keyframes deslizar{
+    0%{
+        top: -5%;
+        opacity: 0;
+        pointer-events: none;
+
+    }
+    100%{
+        top: 20%;
+        opacity: 100%;
+        pointer-events: all;
+
+    }
+    
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="Form.css" media="screen">
+    <script src="https://kit.fontawesome.com/8ee18defea.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="form">
+        <h2 class="title">Cadastro</h2>
+
+        <form action="">
+            <label for="">Nome</label>
+        <div class="input">
+            <i class="far fa-user-circle"></i>
+            <input id="username" name="username" placeholder="username" type="text" required>
+        </div>
+
+        <label for="">Email</label>
+        <div class="input">
+            <i class="fas fa-envelope-open-text"></i> <!— Esse codigo fica entremeio da div e input —>
+            <input id="email" name="email" placeholder="email" type="text" required>
+        </div>
+
+        <label for="">Senha</label>
+        <div class="input">
+            <i class="fas fa-key"></i>
+            <input id="senha" name="password" placeholder="password" type="password" required>
+        </div><br>
+        <div id="bottom" onclick="clicou()">
+            <button type="submit">Cadastrar</button>
+        </div>
+            
+        </form>
+    </div>
+
+    
+
+    <script>
+        var alerta = document.getElementById('bottom')
+
+        function clicou(){
+            alert ('Seu cadastro foi concluído')
+        }
+    </script>
+
+    <div>
+       
+            <p> © Created by Felype Rangel</p>
+          
+    </div>
+
+
+
+        
+
+
+</body>
+</html>
